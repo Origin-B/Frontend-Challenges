@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(30, 54%, 90%);
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 50px 0;
+}
+
+div {
+  width: 100%;
+  max-width: 736px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 24px;
+  padding: 40px;
+  font-family: "Outfit", sans-serif;
+  line-height: 1.5;
+  color: hsl(30, 10%, 34%);
+}
+
+section {
+  margin-bottom: 32px;
+}
+
+h1 {
+  font-family: "Young Serif", serif;
+  color: hsl(24, 5%, 18%);
+  font-size: 2.5rem;
+  margin: 32px 0 24px;
+  line-height: 1;
+}
+
+h2 {
+  font-family: "Young Serif", serif;
+  color: hsl(14, 45%, 36%);
+  font-size: 1.75rem;
+  margin-bottom: 16px;
+}
+
+p {
+  margin-bottom: 16px;
+}
+
+.intro img {
+  width: 100%;
+  display: block;
+  border-radius: 12px;
+}
+
+.Preparation-sec-style {
+  background-color: hsl(330, 100%, 98%);
+  padding: 24px;
+  border-radius: 12px;
+  margin-bottom: 32px;
+}
+
+.Preparation-sec-style h3 {
+  color: hsl(332, 51%, 32%);
+  font-size: 1.25rem;
+  margin-bottom: 16px;
+}
+
+ul, ol {
+  padding-left: 24px;
+}
+
+li {
+  padding-left: 16px;
+  margin-bottom: 8px;
+}
+
+li::marker {
+  color: hsl(14, 45%, 36%);
+  font-weight: bold;
+}
+
+.Preparation-sec-style li::marker {
+  color: hsl(332, 51%, 32%);
+}
+
+.text-weight {
+  font-weight: 700;
+  color: hsl(30, 10%, 34%);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+}
+
+table tr {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+table tr:last-child {
+  border-bottom: none;
+}
+
+table td {
+  padding: 12px 24px;
+}
+
+table td:first-child {
+  color: hsl(30, 10%, 34%);
+}
+
+.table-text-weight {
+  color: hsl(14, 45%, 36%);
+  font-weight: 700;
+}
+
+footer {
+  margin-top: 40px;
+  padding-top: 24px;
+  border-top: 1px solid hsl(30, 18%, 87%);
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+footer a {
+  color: hsl(14, 45%, 36%);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+footer img {
+  width: 50px;
+  position: relative;
+  top: 20px;
+  border: solid 3px ;
+  border-color: white #2196f3 white #2196f3;
+  border-radius: 100%;
+}
+
+footer span {
+  color: #2196f3;
+  font-weight: bold;
+}
