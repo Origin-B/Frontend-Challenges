@@ -140,7 +140,7 @@ footer > img { width: 40px; border-radius: 50%; }
     width: 100%;
     display: grid;
     grid-template-columns: repeat(4, minmax(200px,1fr));
-    grid-template-rows: 1fr repeat(2, 100px) 1fr;
+    grid-template-rows: 1fr repeat(2, 150px) 1fr;
     gap: 10px;}
 
   main > div {
