@@ -9,6 +9,8 @@
 
 --White: hsl(0, 0%, 100%);
 --Black: hsl(0, 0%, 7%);
+
+--background-color: hsla(33, 67%, 93%, 0.35);
 }
 
 @font-face {
@@ -24,8 +26,8 @@ body {
   justify-content: center;
   align-items: center;
   font-family: 'DM Sans', sans-serif;
-  font-size: 18px;
-  background-color: hsla(33, 67%, 93%, 0.35);
+  font-size: 1.125rem;
+  background-color: var(--background-color);
 }
 
 .container {
@@ -101,11 +103,11 @@ div > img { width: 80%; }
   text-align: center;
   background-color: var(--Purple-100);}
 
-  .four p:last-of-type { width: 80%; font-size: 15px;}
+.four p:last-of-type { width: 80%; font-size: 15px;}
 
 /* five */
 
-.five p { text-align: center;}
+.five > p { text-align: center;}
 
 /* sex */
 
