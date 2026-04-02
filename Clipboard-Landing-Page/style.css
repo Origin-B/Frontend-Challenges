@@ -177,9 +177,11 @@ div > p > a { font-weight: bold; }
 
 @media (min-width: 1024px) {
 
+  .section__article--width {width: 69%;}
+
   p { font-size: 1em; } 
   
-  .comp-device-img { width: 100%; max-width: 878px; }
+  .comp-device-img { width: 100%; }
 
   body > header{ background-image: url(images/bg-header-desktop.png); }
 
@@ -191,9 +193,7 @@ div > p > a { font-weight: bold; }
     flex-direction: row;
     align-items: flex-start;
     text-align: left;
-    margin-left: -1em;}
-
-  section > figure { display: flex; justify-content: end; }
+    margin-left: -7em;}
 
     section > aside { 
         width: 100%;
@@ -201,6 +201,8 @@ div > p > a { font-weight: bold; }
         flex-direction: row;
         justify-content: center;
         align-items: flex-start;}
+
+    main > section:nth-child(5), section >ul { width: 100%; }
 
   aside > section, section > ul > li  { flex: 1; }
 
