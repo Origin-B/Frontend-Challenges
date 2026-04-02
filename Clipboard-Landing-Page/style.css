@@ -181,7 +181,9 @@ div > p > a { font-weight: bold; }
 
   p { font-size: 1em; } 
   
-  .comp-device-img { width: 100%; }
+  .comp-device-img { width: 105%; }
+
+  section > figure { max-width: 40em; display: flex; justify-content: flex-end; overflow: hidden; }
 
   body > header{ background-image: url(images/bg-header-desktop.png); }
 
