@@ -1,0 +1,215 @@
+
+*,::after,::before { padding: 0; margin: 0; box-sizing: border-box; font-family:inherit; font-size: inherit; }
+
+:root {
+  --Green-500: hsl(171, 66%, 44%);
+  --Blue-100: hsl(233, 100%, 69%);
+  --Gray-700: hsl(210, 10%, 33%);
+  --Gray-500: hsl(201, 11%, 66%);
+  --footer-bg:hsla(202, 11%, 66%, 0.11);
+}
+
+/* Mobile screen */
+
+body { 
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--Gray-500);
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+/* Font-size */
+
+h1, h2, h3 { font-weight: 600; color: var(--Gray-700);}
+
+h1 { font-size: 1.5em; }
+
+p { font-size: .8em; }   
+
+/* Button */
+
+/* Button-flex */
+
+section > nav {  width: 100%; display: flex; flex-direction: column; align-items: center; } 
+
+/* Button General Layout */
+
+button[type="button"] {
+  width: 80%;
+  max-width: 256px;
+  display: flex;
+  justify-content: center;
+  margin: .6rem;
+  padding: 1rem;
+  border: none;
+  border-radius: 1.5rem;
+  box-shadow: 0 10px 20px hsla(0, 0%, 0%, 0.1);
+  color: white; 
+  cursor: pointer;}
+
+/* Button secondary layout */
+
+.button-ios { background-color: var(--Green-500); }
+.button-mac { background-color: var(--Blue-100); }
+
+/* Button hover */
+
+button[type="button"]:hover {  opacity: .8; } 
+
+/* Comp-img device-img */
+
+.comp-device-img { width: clamp(200px, 290px, 300px); }
+
+
+/* Header */
+
+body > header { 
+  width: 100%;
+  height: clamp(200px, 220px, 500px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(images/bg-header-mobile.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+header > img { width: clamp(90px, 100px, 200px); }
+
+/* Main */
+
+  /* General layout */
+  
+  main {  
+    width: clamp(80%, 85%, 90%); 
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    gap: 5rem; }
+  
+  
+  section > article,
+  section > header, section > div { display: flex; flex-direction: column; gap: .5rem; }
+  
+  aside > section { 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 2em;}
+  
+  main > section,
+  section > section,  
+  section > aside, 
+  section >ul{     
+      display: flex;
+      gap: 2rem;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;}
+  
+  section > ul, footer ul {  list-style: none; }
+
+/* Footer */
+
+footer {
+  width: 100%;
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  margin-top: 8em;
+  padding: 2em; 
+  background-color: var(--footer-bg);}
+
+  /* Footer Image */
+
+  footer img { width: 30%; max-width: 90px; }
+
+
+
+  /* Footer List layout */
+  
+    footer ul {    
+      display: flex;
+      gap: 1em;
+      flex-direction: column;
+      justify-content: center;
+      text-decoration: none;}
+
+    li a, body > div a {
+      text-decoration: none;
+      color: var(--Gray-500);}
+  
+    li > a:hover, body > div a:hover { color: var(--Green-500); cursor: pointer; }
+
+  /* Footer Section */
+
+    footer > section { display: flex; gap: 2em;} 
+  
+    footer a svg path { fill: var(--Gray-700); }
+
+    footer a:hover svg path { fill: var(--Green-500); }
+
+body > div { 
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-align: left;
+  font-size: 0.8em;
+  width: 80%;}
+
+body > div > img { width: 50px; border-radius: 50%; }
+
+div > p > a { font-weight: bold; }
+
+@media (min-width: 1024px) {
+
+  p { font-size: 1em; } 
+  
+  .comp-device-img { width: 100%; max-width: 878px; }
+
+  body > header{ background-image: url(images/bg-header-desktop.png); }
+
+  section > nav { flex-direction: row; justify-content: center; }
+  
+  section > div { width: 75%; max-width: 21em; gap: 1.5em; }
+
+  section > section {    
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+    margin-left: -6em;}
+
+  section > figure { display: flex; justify-content: end; }
+
+    section > aside { 
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;}
+
+  aside > section, section > ul > li  { flex: 1; }
+
+    section >ul,footer {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-evenly;}
+
+  footer ul {    
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+    text-align: left;} }
