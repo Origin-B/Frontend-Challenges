@@ -1,0 +1,77 @@
+# Social Proof Section
+
+A responsive social proof section built with HTML and CSS as a solution to the [Frontend Mentor](https://www.frontendmentor.io) challenge.
+
+---
+
+## 📸 Screenshot
+
+### Desktop
+
+![Desktop Preview](design/desktop-design.png)
+
+### Mobile
+
+![Mobile Preview](design/mobile-design.png)
+
+---
+
+## 🔗 Links
+
+- **Solution:** [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/your-solution-id)
+
+---
+
+## 🛠️ Built With
+
+- Semantic HTML5
+- CSS Custom Properties (Variables)
+- Flexbox
+- Mobile-first workflow
+- Google Fonts — [League Spartan](https://fonts.google.com/specimen/League+Spartan)
+
+---
+
+## 💡 What I Learned
+
+- Using `background-image` with multiple SVG files to add decorative patterns:
+
+```css
+body {
+  background-image:
+    url("images/bg-pattern-top-mobile.svg"),
+    url("images/bg-pattern-bottom-mobile.svg");
+  background-position:
+    top left,
+    bottom right;
+  background-repeat: no-repeat, no-repeat;
+}
+```
+
+- Creating a staggered layout using the CSS `translate` property with `nth-of-type`:
+
+```css
+.clients-comments-sec article:nth-of-type(2) {
+  translate: 0 calc(var(--Size-1) * 2);
+}
+.clients-comments-sec article:nth-of-type(3) {
+  translate: 0 calc(var(--Size-1) * 4);
+}
+```
+
+- The difference between `margin` and `translate`:
+  - `margin` pushes surrounding elements away
+  - `translate` moves the element itself without affecting others
+
+---
+
+## 👤 Author
+
+- GitHub — [@Origin-B](https://github.com/Origin-B)
+- Frontend Mentor — [@Origin-B](https://www.frontendmentor.io/profile/Origin-B)
+
+---
+
+## 🙏 Acknowledgments
+
+Challenge by [Frontend Mentor](https://www.frontendmentor.io).
