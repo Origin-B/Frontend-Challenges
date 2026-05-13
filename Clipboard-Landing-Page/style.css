@@ -141,7 +141,7 @@ footer {
 
   /* Footer List layout */
   
-    footer ul {    
+    footer ul {
       display: flex;
       gap: 1em;
       flex-direction: column;
@@ -162,7 +162,7 @@ footer {
 
     footer a:hover svg path { fill: var(--Green-500); }
 
-body > div {     
+body > div {
   width: 80%;
   display: flex;
   align-items: center;
@@ -191,7 +191,7 @@ div > p > a { font-weight: bold; }
   
   section > div { width: 75%; max-width: 21em; gap: 1.5em; }
 
-  section > section {    
+  section > section {
     flex-direction: row;
     align-items: flex-start;
     text-align: left;
@@ -213,7 +213,7 @@ div > p > a { font-weight: bold; }
     flex-direction: row; 
     justify-content: space-evenly;}
 
-  footer ul {    
+  footer ul {
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
