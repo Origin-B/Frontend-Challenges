@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Gold-500: hsl(31, 77%, 52%);
+  --Cyan-800: hsl(184, 100%, 22%);
+  --Green-950: hsl(179, 100%, 13%);
+  --Transparent-white: hsla(0, 0%, 100%, 0.75);
+  --Gray-100: hsl(0, 0%, 95%);
+}
+
+html{
+  font-size: 15px;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  padding: 2em;
+  font-size: 1.05rem;
+  font-family: "Lexend Deca", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  color: var(--Transparent-white);
+  background-color: var(--Gray-100);
+}
+
+h2 {
+  font-size: 2em;
+  font-family: "Big Shoulders", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color: var(--Gray-100);
+}
+
+main {
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  margin: 60px 0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  padding: 2em;
+  justify-content: space-around;
+}
+
+article img {
+  width: 60px;
+}
+
+article:nth-of-type(1) {
+  background-color: var(--Gold-500);
+}
+
+article:nth-of-type(2) {
+  background-color: var(--Cyan-800);
+}
+
+article:nth-of-type(3) {
+  background-color: var(--Green-950);
+}
+
+button {
+  width: 120px;
+  padding: 12px;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  background-color: var(--Gray-100);
+  box-shadow: 0px 5px 10px 0px #00000020;
+  transition: box-shadow 1s ease, color 1s ease;
+}
+
+article:nth-of-type(1) button {
+  color: var(--Gold-500);
+}
+
+article:nth-of-type(2) button {
+  color: var(--Cyan-800);
+}
+
+article:nth-of-type(3) button {
+  color: var(--Green-950);
+}
+
+button:hover {
+  color: var(--Gray-100) !important;
+  box-shadow: inset 130px 0 0 0 coral;
+}
+
+.attribution {
+  display: flex;
+  gap: .5em;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  color: var(--Green-950);
+  font-size: 10px;
+}
+
+.attribution>img {
+  width: 35px;
+  border-radius: 50%;
+}
+
+.attribution a {
+  color: var(--Gold-500);
+  font-weight: 700;
+  text-decoration: none;
+  transition: color .4s ease-in-out;
+}
+
+.attribution a:hover {
+  color: var(--Cyan-800);
+}
+
+@media (min-width:500px) {
+  .attribution {
+    font-size: 15px;
+  }
+}
+
+@media (min-width:1000px) {
+  main {
+    flex-direction: row;
+  }
+
+  article>p {
+    width: 100%;
+  }
+
+  button {
+    margin-top: 1em;
+  }
+
+}
