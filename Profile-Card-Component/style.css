@@ -1,0 +1,124 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  --Blue-600: hsl(185, 75%, 39%);
+  --Navy-950: hsl(229, 23%, 23%);
+  --Gray-500: hsl(227, 10%, 46%);
+  --Gray-100: hsl(225, 10%, 92%);
+}
+body{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  padding: 1.5em;
+  font-family: "Kumbh Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "YOPQ" 300;
+  color: var(--Gray-500);
+  background-color: var(--Blue-600);
+  background-image: url(images/bg-pattern-top.svg),
+                    url(images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-size: 80%, 80%;
+  background-position: -120% -20%, 250% 120%;
+}
+main{
+  width: 100%;
+  max-width: 350px;
+  border-radius: 10px;
+  background-color: var(--Gray-100);
+  overflow: hidden;
+}
+main > img{
+  width: 100%;
+}
+section{
+  min-height: 210px;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.about{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  gap: .5em;
+  position: relative;
+  flex: 1;
+}
+h1{
+  font-size: 18px;
+  font-weight: normal;
+}
+.about img{
+  position: absolute;
+  top: 0;
+  border: 5px solid var(--Gray-100);
+  border-radius: 50%;
+  translate: 0 -50%;
+}
+.stats{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: .5em;
+  padding: 1em;
+  border-top: 2px solid var(--Gray-950);
+}
+.stats > p{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: .4em;
+  flex: 1;
+}
+.stat{
+  font-size: 18px;
+}
+.username,
+.stat{
+  font-weight: 700;
+  color: var(--Navy-950);
+}
+.attribution {
+  display: flex;
+  gap: .5em;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+}
+.attribution>img {
+  width: 35px;
+  border-radius: 50%;
+}
+.attribution a {
+  color: var(--Gray-100);
+  font-weight: 700;
+  text-decoration: none;
+  transition: color .4s ease-in-out;
+}
+.attribution a:hover {
+  color: var(--Navy-950);
+  background: none;
+}
+@media (min-width:500px) {
+  .attribution {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1400px) {
+  body{
+      background-position: -140% -100%, 230% 200%;
+  }
+}
