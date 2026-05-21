@@ -18,7 +18,7 @@ A clean and responsive product preview card built with pure **HTML** and **CSS**
 
 ## 🔗 Links
 
-- **Live Site:** [View Demo](https://origin-b.github.io/product-preview-card) _(update with your URL)_
+- **Live Site:** [View Demo](https://origin-b.github.io/Frontend-Challenges/Product-Preview-Card) _(update with your URL)_
 - **GitHub Repo:** [github.com/Origin-B](https://github.com/Origin-B)
 
 ---
@@ -56,7 +56,7 @@ A clean and responsive product preview card built with pure **HTML** and **CSS**
 Clone the repository and open `index.html` in your browser:
 
 ```bash
-git clone https://github.com/Origin-B/product-preview-card.git
+git clone https://github.com/Origin-B/Frontend-Challenges/tree/main/Product-Preview-Card
 cd product-preview-card
 open index.html
 ```

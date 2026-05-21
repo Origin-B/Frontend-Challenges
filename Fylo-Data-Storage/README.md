@@ -18,7 +18,7 @@ A responsive data storage component built with pure **HTML** and **CSS**, as par
 
 ## 🔗 Links
 
-- **Live Site:** [View Demo](https://origin-b.github.io/Fylo-Data-Storage) _(update with your URL)_
+- **Live Site:** [View Demo](https://origin-b.github.io/Frontend-Challenges/Fylo-Data-Storage) _(update with your URL)_
 - **GitHub Repo:** [github.com/Origin-B](https://github.com/Origin-B)
 
 ---
@@ -58,7 +58,7 @@ A responsive data storage component built with pure **HTML** and **CSS**, as par
 Clone the repository and open `index.html` in your browser:
 
 ```bash
-git clone https://github.com/Origin-B/Fylo-Data-Storage.git
+git clone https://github.com/Origin-B/Frontend-Challenges/tree/main/Fylo-Data-Storage
 cd Fylo-Data-Storage
 open index.html
 ```

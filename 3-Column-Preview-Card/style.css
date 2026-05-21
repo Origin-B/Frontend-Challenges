@@ -10,6 +10,7 @@
   --Green-950: hsl(179, 100%, 13%);
   --Transparent-white: hsla(0, 0%, 100%, 0.75);
   --Gray-100: hsl(0, 0%, 95%);
+  --btn-color: hsl(0, 100%, 50%);
 }
 
 html{
@@ -61,15 +62,15 @@ article img {
   width: 60px;
 }
 
-article:nth-of-type(1) {
+.card-sedan {
   background-color: var(--Gold-500);
 }
 
-article:nth-of-type(2) {
+.card-suv {
   background-color: var(--Cyan-800);
 }
 
-article:nth-of-type(3) {
+.card-luxury {
   background-color: var(--Green-950);
 }
 
@@ -80,25 +81,25 @@ button {
   cursor: pointer;
   border-radius: 20px;
   background-color: var(--Gray-100);
-  box-shadow: 0px 5px 10px 0px #00000020;
-  transition: box-shadow 1s ease, color 1s ease;
+  box-shadow: 0px 5px 10px 0px #00000030;
+  transition: .5s ease;
 }
 
-article:nth-of-type(1) button {
+.card-sedan button {
   color: var(--Gold-500);
 }
 
-article:nth-of-type(2) button {
+.card-suv button {
   color: var(--Cyan-800);
 }
 
-article:nth-of-type(3) button {
+.card-luxury button {
   color: var(--Green-950);
 }
 
-button:hover {
-  color: var(--Gray-100) !important;
-  box-shadow: inset 130px 0 0 0 coral;
+article > button:hover{
+  color: var(--Gray-100);
+  box-shadow: inset 130px 0 0 0 var(--btn-color);
 }
 
 .attribution {
